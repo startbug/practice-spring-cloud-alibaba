@@ -1,0 +1,5 @@
+server:
+  port: 45000
+spring:
+  application:
+    name: sentinel-demo

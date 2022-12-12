@@ -1,0 +1,10 @@
+server:
+  port: 18888
+spring:
+  application:
+    name: order-sentinel
+  cloud:
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:8858
+      web-context-unify: false  # 流控模式:链路，需要指定为false，让sentinel维护调用链路树，默认是收敛的

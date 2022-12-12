@@ -1,0 +1,13 @@
+server:
+  port: 35010
+spring:
+  application:
+    name: nacos-product
+  cloud:
+    nacos:
+      #      server-addr: 127.0.0.1:8848
+      server-addr: 192.168.213.130:8848 # nacos集群
+      discovery:
+        username: nacos
+        password: nacos
+#        namespace: d6438f87-b4fe-451b-b681-c010ab02198a

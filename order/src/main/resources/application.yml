@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: nacos-order
+  cloud:
+    nacos:
+      #      server-addr: 127.0.0.1:8848
+      server-addr: 192.168.213.130:8848 # nacos集群
+      discovery:
+        username: nacos
+        password: nacos
+        #        namespace: d6438f87-b4fe-451b-b681-c010ab02198a
+        ephemeral: false
+    loadbalancer:
+      ribbon:
+        enabled: false  # 该版本的SpringCloud默认是用ribbon进行负载均衡，这里取消使用ribbon，而是使用loadbalance
+server:
+  port: 35000
+# SpringBoot默认日志级别是info，feign的debug日志级别不会输入
+logging:
+  level:
+    com.ggs.feign: debug
+# feign局部日志
+feign:
+  client:
+    config:
+      nacos-stock:
+        logger-level: FULL
+#        connect-timeout: 5000
+#        read-timeout: 3000
