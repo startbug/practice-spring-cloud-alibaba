@@ -12,6 +12,7 @@
         <module>sentinel-demo</module>
         <module>order-sentinel</module>
         <module>order-openfeign-sentinel</module>
+        <module>seata-stock</module>
     </modules>
     <version>1.0-SNAPSHOT</version>
     <name>practice-spring-cloud-alibaba Maven Webapp</name>
