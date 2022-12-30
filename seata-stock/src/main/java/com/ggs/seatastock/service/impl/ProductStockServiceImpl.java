@@ -31,4 +31,10 @@ public class ProductStockServiceImpl extends ServiceImpl<ProductStockMapper, Pro
         return effectRow > 0;
     }
 
+    @Override
+    public boolean createTable(String tableName) {
+        int effectRow = productStockMapper.createTable(tableName);
+        return effectRow > 0;
+    }
+
 }

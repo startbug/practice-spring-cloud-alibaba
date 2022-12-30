@@ -6,6 +6,21 @@
         update product_stock
         set stock = stock - #{number}
         where id = #{productId}
+          and stock >= #{number}
+    </update>
+
+    <!--创建表的 SQL 语句-->
+    <update id="createTable">
+        CREATE TABLE IF NOT EXISTS ${tableName}
+        (
+            `id`       int(0)      NOT NULL AUTO_INCREMENT COMMENT '主键',
+            `group_id` int(0)      NULL DEFAULT NULL COMMENT '组号',
+            `username` varchar(20) NULL DEFAULT NULL COMMENT '用户名',
+            `password` varchar(20) NULL DEFAULT NULL COMMENT '密码',
+            PRIMARY KEY (`id`)
+            ) ENGINE = InnoDB
+            AUTO_INCREMENT = 0
+            CHARACTER SET = utf8mb4 COMMENT ='用于测试的用户表'
     </update>
 
 </mapper>

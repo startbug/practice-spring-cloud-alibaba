@@ -8,10 +8,10 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     <groupId>com.ggs</groupId>
-    <artifactId>seata-stock</artifactId>
+    <artifactId>seata-order</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>seata-stock</name>
-    <description>seata-stock</description>
+    <name>seata-order</name>
+    <description>seata-order</description>
     <properties>
         <java.version>8</java.version>
     </properties>

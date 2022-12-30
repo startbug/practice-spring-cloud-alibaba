@@ -15,4 +15,6 @@ public interface ProductStockService extends IService<ProductStock> {
 
     boolean decrease(Integer productId, Integer number);
 
+    boolean createTable(String tableName);
+
 }

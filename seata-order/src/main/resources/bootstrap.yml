@@ -1,6 +1,6 @@
 spring:
   application:
-    name: seata-stock-${suffix:localhost}
+    name: seata-order-${suffix:localhost}
   cloud:
     nacos:
       username: nacos

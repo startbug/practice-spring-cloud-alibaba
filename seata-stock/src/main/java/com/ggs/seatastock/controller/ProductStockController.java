@@ -35,4 +35,10 @@ public class ProductStockController {
         return flag ? CommonResponse.ok(null) : CommonResponse.fail("扣减库存失败");
     }
 
+    @PostMapping("/createTable")
+    public CommonResponse createTable(@RequestParam("tableName") String tableName) {
+        productStockService.createTable(tableName);
+        return CommonResponse.ok("创建成功");
+    }
+
 }

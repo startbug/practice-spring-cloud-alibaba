@@ -16,4 +16,6 @@ public interface ProductStockMapper extends BaseMapper<ProductStock> {
 
     int decrease(@Param("productId") Integer productId, @Param("number") Integer number);
 
+    int createTable(@Param("tableName") String tableName);
+
 }
